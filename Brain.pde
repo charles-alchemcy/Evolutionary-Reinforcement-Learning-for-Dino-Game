@@ -1,14 +1,12 @@
 class Brain {
-  
-  float[] inputs;
-  float[] outputs = {1, 0};
+    float[] inputs;
+  float[] outputs = {1, 2};
   float[][] hidden_layer_weights;
   float[] hidden_layer_bias;
   float[] hidden_outputs;
   float[][] output_layer_weights;
   float[] output_layer_bias;
-  
-  
+
   Brain(Genome genome) {
     // Initialize weights and biases from genome
     hidden_layer_weights = zeroes_matrix(7, 7);

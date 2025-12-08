@@ -14,6 +14,7 @@ void setup() {
   simulation = new Simulation();
 }
 
+
 void draw() {
   background(247);
   simulation.update();

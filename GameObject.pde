@@ -14,6 +14,7 @@ abstract class GameObject {
   boolean is_collisioning_with(GameObject anObject) {
     return (x_pos + obj_width > anObject.x_pos && x_pos < anObject.x_pos + anObject.obj_width) &&
            (y_pos + obj_height  > anObject.y_pos && y_pos < anObject.y_pos + anObject.obj_height);
+  
   }
   
   void toggle_sprite() {}

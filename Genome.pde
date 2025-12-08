@@ -5,6 +5,7 @@ class Gen {
   int id_target_neuron;
   float weight;
   
+
   Gen(){
     source_hidden_layer = (random(1) < 0.5);
     id_source_neuron = (int)random(0, 7);
@@ -17,6 +18,7 @@ class Gen {
   }
   
 }
+
 
 class Genome {
   

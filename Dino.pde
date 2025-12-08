@@ -3,11 +3,9 @@ class Dino extends GameObject implements Comparable<Dino>{
   float jump_stage;
   boolean alive = true;
   int score;
-
   Genome genome;
   Brain brain;
-  float[] brain_inputs = new float[7];
-
+  float[] brain_inputs = new float[8];
   Dino() {
     x_pos = (int)random(100, 300);
     y_pos = 450;
@@ -20,7 +18,7 @@ class Dino extends GameObject implements Comparable<Dino>{
     
     sprite = "walking_dino_1";
     sprite_offset[0] = -4;
-    sprite_offset[1] = -2;
+    sprite_offset[1] = -1;
   }
 
   void init_brain() {
@@ -41,7 +39,6 @@ class Dino extends GameObject implements Comparable<Dino>{
       update_jump();
     }
   }
-
   void update_brain_inputs(float[] next_obstacle_info, int speed){
     brain_inputs[0] = next_obstacle_info[0] / 900;                  // normalized distance
     brain_inputs[1] = (next_obstacle_info[1] - 450) / (1350 - 450); // normalized obstacle x pos

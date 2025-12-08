@@ -7,16 +7,18 @@ class Simulation {
   ArrayList<Enemy> enemies;
   float speed;
   Ground ground;
-  int score;
+  int score_value;
   int generation;
   int last_gen_avg_score;
   int last_gen_max_score;
   int dinos_alive;
 
+
   // to control enemies spawn time
   float last_spawn_time;
   float time_to_spawn;
-  
+
+
   Simulation() {
     dinos = new ArrayList<Dino>();
     for (int i = 0; i < DINOS_PER_GENERATION; i++) {
@@ -27,7 +29,7 @@ class Simulation {
     ground = new Ground();
     score = 0;
     generation = 1;
-    last_gen_avg_score = 0;
+    last_gen_avg_score = 1;
     last_gen_max_score = 0;
     dinos_alive = DINOS_PER_GENERATION;
     last_spawn_time = millis();
@@ -66,6 +68,7 @@ class Simulation {
           dino.die(score);
         }
       }
+      
       if (dino.alive) {
         dinos_alive++;
       }
