@@ -19,7 +19,7 @@ class Dino extends GameObject implements Comparable<Dino>{
     
     sprite = "walking_dino_1";
     sprite_offset[0] = -4;
-    sprite_offset[1] = -2;
+    sprite_offset[1] = -1;
   }
 
   void init_brain() {
