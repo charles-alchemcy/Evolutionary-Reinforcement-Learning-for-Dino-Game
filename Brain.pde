@@ -1,7 +1,7 @@
 class Brain {
   
   float[] inputs;
-  float[] outputs = {1, 0};
+  float[] outputs = {1, 2};
   float[][] hidden_layer_weights;
   float[] hidden_layer_bias;
   float[] hidden_outputs;
