@@ -7,7 +7,6 @@ class Brain {
   float[] hidden_outputs;
   float[][] output_layer_weights;
   float[] output_layer_bias;
-  
 
   Brain(Genome genome) {
     // Initialize weights and biases from genome
