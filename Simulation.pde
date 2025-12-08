@@ -29,7 +29,7 @@ class Simulation {
     ground = new Ground();
     score = 0;
     generation = 1;
-    last_gen_avg_score = 0;
+    last_gen_avg_score = 1;
     last_gen_max_score = 0;
     dinos_alive = DINOS_PER_GENERATION;
     last_spawn_time = millis();
