@@ -17,6 +17,7 @@ class Simulation {
   // to control enemies spawn time
   float last_spawn_time;
   float time_to_spawn;
+
   
   Simulation() {
     dinos = new ArrayList<Dino>();
