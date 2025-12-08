@@ -3,7 +3,6 @@ class Dino extends GameObject implements Comparable<Dino>{
   float jump_stage;
   boolean alive = true;
   int score;
-
   Genome genome;
   Brain brain;
   float[] brain_inputs = new float[7];
