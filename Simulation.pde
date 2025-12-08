@@ -68,6 +68,7 @@ class Simulation {
           dino.die(score);
         }
       }
+      
       if (dino.alive) {
         dinos_alive++;
       }
