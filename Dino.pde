@@ -39,7 +39,6 @@ class Dino extends GameObject implements Comparable<Dino>{
       update_jump();
     }
   }
-
   void update_brain_inputs(float[] next_obstacle_info, int speed){
     brain_inputs[0] = next_obstacle_info[0] / 900;                  // normalized distance
     brain_inputs[1] = (next_obstacle_info[1] - 450) / (1350 - 450); // normalized obstacle x pos
