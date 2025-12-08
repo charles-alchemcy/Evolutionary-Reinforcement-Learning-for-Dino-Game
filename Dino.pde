@@ -6,8 +6,6 @@ class Dino extends GameObject implements Comparable<Dino>{
   Genome genome;
   Brain brain;
   float[] brain_inputs = new float[8];
-
-
   Dino() {
     x_pos = (int)random(100, 300);
     y_pos = 450;
