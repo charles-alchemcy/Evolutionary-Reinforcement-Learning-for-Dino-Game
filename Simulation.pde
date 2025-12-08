@@ -13,6 +13,7 @@ class Simulation {
   int last_gen_max_score;
   int dinos_alive;
 
+
   // to control enemies spawn time
   float last_spawn_time;
   float time_to_spawn;
