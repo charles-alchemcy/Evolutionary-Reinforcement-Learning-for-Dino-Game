@@ -8,7 +8,7 @@ class Brain {
   float[][] output_layer_weights;
   float[] output_layer_bias;
   
-  
+
   Brain(Genome genome) {
     // Initialize weights and biases from genome
     hidden_layer_weights = zeroes_matrix(7, 7);
