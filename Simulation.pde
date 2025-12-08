@@ -7,7 +7,7 @@ class Simulation {
   ArrayList<Enemy> enemies;
   float speed;
   Ground ground;
-  int score;
+  int score_value;
   int generation;
   int last_gen_avg_score;
   int last_gen_max_score;
@@ -18,7 +18,7 @@ class Simulation {
   float last_spawn_time;
   float time_to_spawn;
 
-  
+
   Simulation() {
     dinos = new ArrayList<Dino>();
     for (int i = 0; i < DINOS_PER_GENERATION; i++) {
